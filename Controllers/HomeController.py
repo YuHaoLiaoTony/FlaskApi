@@ -8,6 +8,28 @@ class HomeController(BaseController):
         @app.route('/')
         def HelloWorld():
             return 'Hello World'
+
+        @app.route('/add')
+        def add(x,y):
+            return x+y
+
+        @app.route('/sub')
+        def sub(x,y):
+            return x-y
+
+        @app.route('/mult')
+        def mult(x,y):
+            return x*y
+
+        @app.route('/div')
+        def div(x,y):
+            return x/y
+
+        @app.route('/mod')
+        def mod(x,y):
+            return x%y
+
+    
         
 
 
